@@ -25,6 +25,10 @@
       <label><%= l(:setting_show_bottom_summary_line_calculated_remaining_hours) %></label>
       <%= check_box_tag 'settings[show_bottom_summary_line_calculated_remaining_hours]', 1, @settings['show_bottom_summary_line_calculated_remaining_hours'] == '1' %>
     </p>
+    <p>
+      <label><%= l(:setting_show_bottom_summary_line_backlogs_remaining_hours) %></label>
+      <%= check_box_tag 'settings[show_bottom_summary_line_backlogs_remaining_hours]', 1, @settings['show_bottom_summary_line_backlogs_remaining_hours'] == '1' %>
+    </p>
   </div>
 </fieldset>
 

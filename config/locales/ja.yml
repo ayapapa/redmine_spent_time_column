@@ -2,15 +2,18 @@
   label_calculated_spent_hours: 計算された作業時間
   label_divergent_hours: 相違時間
   label_calculated_remaining_hours: 計算された残り時間
+  label_remaining_hours: 残り時間
   setting_show_bottom_summary_line_on_issuelists: チケットのリストの下にサマリを表示
   setting_show_bottom_summary_line_estimated_hours: 予定工数の表示
   setting_show_bottom_summary_line_spent_hours: 作業時間の表示
   setting_show_bottom_summary_line_calculated_spent_hours: 計算された作業時間の表示
   setting_show_bottom_summary_line_divergent_hours: 相違時間の表示
   setting_show_bottom_summary_line_calculated_remaining_hours: 計算された残り時間の表示
+  setting_show_bottom_summary_line_backlogs_remaining_hours: 計算された残り時間の表示(Backlogs用)
   setting_enable_spent_hours_column: 作業時間のカラムを利用
-  setting_enable_calculated_spent_hours_column: 計算された作業時間の絡むを利用
+  setting_enable_calculated_spent_hours_column: 計算された作業時間を利用
   setting_enable_divergent_hours_column: 予定工数と実績工数の差分を利用
   setting_enable_calculated_remaining_hours_column: 計算された残り時間を利用
+  setting_enable_backlogs_remaining_hours_column: 残り時間を利用(Backlogs)
   legend_bottom_summary_line_settings: サマリ表示の設定
   legend_column_settings: カラム設定
