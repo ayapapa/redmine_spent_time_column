@@ -23,6 +23,8 @@ Work towards a stable and highly configurable version 2.0.0 of the plugin:
   * <tt>issue.estimated_hours</tt>
 * Spent time
   * <tt>issue.spent_hours</tt>
+* Backlogs Remaining hours
+  * <tt>issue.remaining_hours</tt>
 * Calculated spent time
   * <tt>Estimated time * % Done</tt>
 * Divergent time
