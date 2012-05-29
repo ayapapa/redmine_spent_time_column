@@ -1,18 +1,7 @@
 require 'redmine'
 require 'redmine_spent_time_column/hooks'
 
-begin
-    require 'dispatcher'
-    def dispatch(plugin, &block)
-        Dispatcher.to_prepare(plugin, &block)
-    end
-rescue LoadError # Rails 3
-    def dispatch(plugin, &block)
-        Rails.configuration.to_prepare(&block)
-    end
-end
-
-dispatch :redmine_spend_time_column do
+Rails.configuration.to_prepare do
   Issue.send(:include, RedmineSpentTimeColumn::Patches::IssuePatch) unless Issue.include?(RedmineSpentTimeColumn::Patches::IssuePatch)
   Query.send(:include, RedmineSpentTimeColumn::Patches::QueryPatch) unless Query.include?(RedmineSpentTimeColumn::Patches::QueryPatch)
   QueriesHelper.send(:include, RedmineSpentTimeColumn::Patches::QueriesHelperPatch) unless QueriesHelper.include?(RedmineSpentTimeColumn::Patches::QueriesHelperPatch)
