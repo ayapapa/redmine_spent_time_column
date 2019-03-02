@@ -37,7 +37,9 @@ module RedmineSpentTimeColumn
       end
 
       def self.included(klass)
-        klass.send :alias_method_chain, :available_columns, :spent_hours
+        #klass.send :alias_method_chain, :available_columns, :spent_hours
+        klass.send :alias_method, :available_columns_without_spent_hours, :available_columns
+        klass.send :alias_method, :available_columns, :available_columns_with_spent_hours
       end
       
     end
