@@ -12,7 +12,9 @@ module RedmineSpentTimeColumn
       end
 
       def self.included(klass)
-        klass.send :alias_method_chain, :column_content, :spent_hours
+        #klass.send :alias_method_chain, :column_content, :spent_hours
+        klass.send :alias_method, :column_content_without_spent_hours, :column_content
+        klass.send :alias_method, :column_content, :column_content_with_spent_hours
       end
       
     end
